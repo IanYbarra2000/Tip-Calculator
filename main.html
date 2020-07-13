@@ -1,4 +1,21 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <link href='style.css' type="text/css" rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <h1>Tip Calculator</h1>
+        </header>
+        <main>
+            <form>
+                <label for="meal-cost">Bill: </label>
+                <input type="number" id='meal-cost' name="cost" required>
+                <label for="Tip">Tip: </label>
+                <input type="number" id='Tip' name="tip" min="10" value="10" required>
+                <label for="people">Number of People: </label>
+                <input type="number" id='people' name="numPeople" min="1" value="1" required>
+            </form>
+        </main>
+    </body>
 </html>
