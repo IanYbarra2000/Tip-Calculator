@@ -19,5 +19,74 @@ form {
     position: relative;
     color: antiquewhite;
 }
-form label {
+table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 40px;
+    align-content: center;
+    color: antiquewhite;
+}
+table input[type=number] {
+    font: inherit;
+    flex: 0 1 auto;
+    min-width: 50px;
+    width: 150px;
+    background: transparent;
+    border: none;
+    color: antiquewhite;
+    text-align: right;
+    border-bottom: 1px solid antiquewhite;
+    
+}
+form table input[type=number]::-webkit-inner-spin-button, form table input[type=number]::-webkit-outer-spin-button{
+    opacity: 1;
+    margin-left: 5px;
+    background-color: antiquewhite;
+    border-radius: 5%;
+}
+
+form table tbody {
+   
+}
+table td {
+    width: fit-content;
+    padding: 0 50px 50px 50px;
+}
+form #buttons{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+form input[type=button]{
+    font-family: inherit;
+    font-size: 30px;
+    color: antiquewhite;
+    background-color: #3d3049;
+    border: 1px solid #2e2436;
+}
+#calc-tip {
+    margin-right: auto;
+}
+#reset {
+    margin-left: auto;
+
+}
+form input[type=button]:hover{
+    cursor: pointer;
+}
+form input[type=button]:active{
+    background-color: antiquewhite;
+    color: #3d3049;
+}
+p {
+    font-size: 40px;
+    color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+}
+#results {
+    margin-top: 100px;
 }
