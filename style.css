@@ -10,6 +10,7 @@ header {
     display: flex;
     background-color: #3d3049;
     justify-content: center;
+    z-index: 2;
 }
 header h1 {
     color: antiquewhite;
@@ -60,7 +61,7 @@ form #buttons{
     align-content: center;
     justify-content: space-evenly;
 }
-form input[type=button]{
+form input[type=button], form input[type=reset]{
     font-family: inherit;
     font-size: 30px;
     color: antiquewhite;
@@ -74,10 +75,10 @@ form input[type=button]{
     margin-left: auto;
 
 }
-form input[type=button]:hover{
+form input[type=button]:hover, form input[type=reset]:hover{
     cursor: pointer;
 }
-form input[type=button]:active{
+form input[type=button]:active, form input[type=reset]:active{
     background-color: antiquewhite;
     color: #3d3049;
 }

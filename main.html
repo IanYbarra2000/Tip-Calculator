@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Tip Calculator</title>
         <link href='style.css' type="text/css" rel='stylesheet'>
+        <script type='text/javascript'src='TipCode.js' defer></script>
     </head>
     <body>
         <header>
@@ -15,7 +17,7 @@
                         <td><input type="number" id='meal-cost' name="cost" value="0.00" required></td>
                     </tr>
                     <tr>
-                        <td><label for="Tip">Tip: </label></td>
+                        <td><label for="Tip">Tip (percent): </label></td>
                         <td><input type="number" id='Tip' name="tip" min="10" value="10" required></td>
                     </tr>
                     <tr>
@@ -24,8 +26,8 @@
                     </tr>
                 </table>
                 <div id='buttons'>
-                    <input type="button" id='reset' value="reset">
-                    <input type="button" id='calc-tip' value="calculate my tip">
+                    <input type="reset" id='reset' value="reset">
+                    <input type="button" id='calc-tip' value="calculate my tip" onclick="calcValues(this.form)">
                 </div>
                 
                 
@@ -35,15 +37,15 @@
             <table id='results'>
                 <tr>
                     <td>Tip Amount: </td>
-                    <td>$0.00</td>
+                    <td id='tipA'>$0.00</td>
                 </tr>
                 <tr>
                     <td>Total: </td>
-                    <td>$0.00</td>
+                    <td id='ttl'>$0.00</td>
                 </tr>
                 <tr>
                     <td>Total Per Person: </td>
-                    <td>$0.00</td>
+                    <td id='ttlPP'>$0.00</td>
                 </tr>
             </table>
         </main>
